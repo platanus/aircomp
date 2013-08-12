@@ -40,15 +40,6 @@ test:
   port: <%= port %>
   <% end %>
 
-staging:
-  adapter: mysql2
-  encoding: utf8
-  database: <%= ENV['PROD_DB_NAME'] %>
-  pool: 5
-  username: <%= ENV['PROD_DB_USER'] %>
-  password: <%= ENV['PROD_DB_PASSWORD'] %>
-  host: <%= ENV['PROD_DB_HOST'] %>
-
 production:
   adapter: mysql2
   encoding: utf8
