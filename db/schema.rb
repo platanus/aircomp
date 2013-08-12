@@ -11,7 +11,20 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130812192112) do
+ActiveRecord::Schema.define(:version => 20130812192903) do
+
+  create_table "rates", :force => true do |t|
+    t.string   "direction"
+    t.string   "rate_type"
+    t.string   "rate_desc"
+    t.integer  "rate"
+    t.string   "flight"
+    t.integer  "trip_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "rates", ["trip_id"], :name => "index_rates_on_trip_id"
 
   create_table "trips", :force => true do |t|
     t.string   "operator"
