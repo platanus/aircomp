@@ -10,7 +10,7 @@ set :deploy_to,   "/home/#{user}/applications/#{application}"
 
 # Repository (if any) configuration.
 set :deploy_via, :remote_cache
-set :repository, "https://github.com/platanus/aircomp.git"
+set :repository, "git@github.com:platanus/aircomp.git"
 # set :git_enable_submodules, 1
 
 # Database
