@@ -15,7 +15,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platforms => :ruby
+  gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
@@ -32,9 +32,10 @@ end
 # To use Jbuilder templates for JSON
 # gem 'jbuilder'
 
+group :production do
 # Use unicorn as the app server
-# gem 'unicorn'
-
+  gem 'unicorn'
+end
 # Deploy with Capistrano
 # gem 'capistrano'
 
