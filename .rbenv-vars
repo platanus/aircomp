@@ -1,0 +1,8 @@
+DEV_DB_NAME=aircomp
+DEV_DB_USER=root
+DEV_DB_PASSWORD=
+SELENIUM_DRIVER=phantomjs
+
+# Only set these below if you are using phantomjs ghostdriver:
+PHANTOM_SERVER=http://127.0.0.1
+PHANTOM_PORT=8383
