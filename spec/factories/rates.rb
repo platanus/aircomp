@@ -10,7 +10,7 @@ FactoryGirl.define do
       association :trip, :tam
     end
     trait :gol do
-      rate_type {[:SM,:AD].sample}
+      rate_type {[:SM,:AD,:SS,:SR].sample}
       rate_desc {{SS:'Smile',AD:'Smile Any Day',SM:'Smile And Money',SR:'Smile Reduzida'}[self.rate_type]}
       flight {"G3-" + (rand(790) + 3000).to_s}
       rate {[10,11,12,13,14,15].sample * 1000}
